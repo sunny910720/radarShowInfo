@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CtrlDlg</class>
+ <widget class="QWidget" name="CtrlDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>310</width>
+    <height>459</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="SiteBox">
+     <property name="title">
+      <string>雷达站信息</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>雷达型号</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="RadarType">
+        <item>
+         <property name="text">
+          <string>LLQ03C</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLQ04E</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLQ07A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLQ08</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLQ08A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLQ10</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLQ11</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLP10B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLP10C</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLP12</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LLP12A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HQ-16B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HQ-7B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HQ-17</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>信号类型</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QComboBox" name="SignalType">
+        <item>
+         <property name="text">
+          <string>常规脉冲</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>线性调频</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>二相编码</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>非线性调频</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>开始波段</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="Boduan1"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>MHz</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>结束波段</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLineEdit" name="Boduan2"/>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>MHz</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>信号带宽</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="SignalBandW"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>MHz</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>功率</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLineEdit" name="RadarPower"/>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>kw</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>经度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="SiteLon"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>纬度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QLineEdit" name="SiteLat"/>
+      </item>
+      <item row="3" column="5">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>高度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="SiteHgt"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>米</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QPushButton" name="SiteBtn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>设置</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="TgtBox">
+     <property name="title">
+      <string>目标设置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_25">
+        <property name="text">
+         <string>目标类型</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="TgtType">
+        <item>
+         <property name="text">
+          <string>机型不明</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>轰炸机</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>战斗机</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>直升机</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>巡航导弹</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>无人机</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>未定义</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_24">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_30">
+        <property name="text">
+         <string>SWelling</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QComboBox" name="TgtSwelling">
+        <item>
+         <property name="text">
+          <string>Swelling0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Swelling1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Swelling2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Swelling3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Swelling4</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QLabel" name="label_28">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>RCS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="TgtRCS"/>
+      </item>
+      <item row="1" column="2" colspan="2">
+       <widget class="QLabel" name="label_29">
+        <property name="text">
+         <string>0.0 m2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLabel" name="label_32">
+        <property name="text">
+         <string>速度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLineEdit" name="TgtSpeed"/>
+      </item>
+      <item row="1" column="6">
+       <widget class="QLabel" name="label_23">
+        <property name="text">
+         <string>km/h</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_26">
+        <property name="text">
+         <string>起始方位</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="TgtAzi1"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLabel" name="label_31">
+        <property name="text">
+         <string>起始距离</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLineEdit" name="TgtRng1"/>
+      </item>
+      <item row="2" column="6">
+       <widget class="QLabel" name="label_27">
+        <property name="text">
+         <string>公里</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_34">
+        <property name="text">
+         <string>结束方位</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="TgtAzi2"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3" colspan="2">
+       <widget class="QLabel" name="label_35">
+        <property name="text">
+         <string>结束距离</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QLineEdit" name="TgtRng2"/>
+      </item>
+      <item row="3" column="6">
+       <widget class="QLabel" name="label_33">
+        <property name="text">
+         <string>公里</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_40">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="label_41">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="label_42">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QPushButton" name="TgtBtn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>添加目标</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="6">
+       <widget class="QLabel" name="label_38">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="JamBox">
+     <property name="title">
+      <string>干扰设置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_43">
+        <property name="text">
+         <string>干扰模式</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="JamType">
+        <item>
+         <property name="text">
+          <string>窄带压制</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>宽带压制</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>航迹欺骗</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>密积小目标</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="2">
+       <widget class="QLabel" name="label_39">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_44">
+        <property name="text">
+         <string>发射功率</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLineEdit" name="JamPower"/>
+      </item>
+      <item row="0" column="6">
+       <widget class="QLabel" name="label_45">
+        <property name="text">
+         <string>kw</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_46">
+        <property name="text">
+         <string>起始频宽</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="JamFreqW1"/>
+      </item>
+      <item row="1" column="2" colspan="2">
+       <widget class="QLabel" name="label_49">
+        <property name="text">
+         <string>MHz</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLabel" name="label_47">
+        <property name="text">
+         <string>结束频宽</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLineEdit" name="JamFreqW2"/>
+      </item>
+      <item row="1" column="6">
+       <widget class="QLabel" name="label_48">
+        <property name="text">
+         <string>MHz</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_55">
+        <property name="text">
+         <string>起始方位</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="JamAzi1"/>
+      </item>
+      <item row="2" column="2" colspan="2">
+       <widget class="QLabel" name="label_60">
+        <property name="text">
+         <string>度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLabel" name="label_54">
+        <property name="text">
+         <string>起始距离</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLineEdit" name="JamRng1"/>
+      </item>
+      <item row="2" column="6">
+       <widget class="QLabel" name="label_57">
+        <property name="text">
+         <string>公里</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_58">
+        <property name="text">
+         <string>结束方位</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="JamAzi2"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_56">
+        <property name="text">
+         <string>度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3" colspan="2">
+       <widget class="QLabel" name="label_61">
+        <property name="text">
+         <string>结束距离</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QLineEdit" name="JamRng2"/>
+      </item>
+      <item row="3" column="6">
+       <widget class="QLabel" name="label_59">
+        <property name="text">
+         <string>公里</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_51">
+        <property name="text">
+         <string>速度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="JamSpeed"/>
+      </item>
+      <item row="4" column="2" colspan="2">
+       <widget class="QLabel" name="label_50">
+        <property name="text">
+         <string>km/h</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QLabel" name="label_53">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QPushButton" name="JamBtn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>添加干扰</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="6">
+       <widget class="QLabel" name="label_52">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
